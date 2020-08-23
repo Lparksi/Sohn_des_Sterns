@@ -1,0 +1,10 @@
+
+spring:
+  cq:
+    plugin-list:
+      - top.parksi.bot.plugins.BashFunc
+      - top.parksi.bot.plugins.GroupInfo
+
+server:
+  port: 5867
+
