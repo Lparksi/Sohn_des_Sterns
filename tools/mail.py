@@ -1,6 +1,6 @@
 import smtplib
-from email.mime.text import MIMEText
 from email.header import Header
+from email.mime.text import MIMEText
 
 mail_host = "smtp.mxhichina.com"
 mail_user = "bot@parksi.email"
@@ -12,14 +12,18 @@ def sendemail(toEmail, title, msg):
     receivers = [toEmail]
 
     message = MIMEText(msg, 'plain', 'utf-8')
-    message['From'] = Header("Parksi-Bot", 'utf-8')
+    message['From'] = Header("Parksi-Bot<bot@parksi.email>", 'utf-8')
     message['To'] = Header(receivers[0], 'utf-8')
 
     subject = title
     message['Subject'] = Header(subject, 'utf-8')
 
-
-    smtpObj = smtplib.SMTP()
-    smtpObj.connect(mail_host, 25)  # 25 为 SMTP 端口号
-    smtpObj.login(mail_user, mail_pass)
-    smtpObj.sendmail(sender, receivers, message.as_string())
+    try:
+        smtpObj = smtplib.SMTP()
+        smtpObj.connect(mail_host, 25)
+        smtpObj.login(mail_user, mail_pass)
+        smtpObj.sendmail(sender, receivers, message.as_string())
+    except smtplib.SMTPRecipientsRefused as e:
+        return e
+    else:
+        return 0
