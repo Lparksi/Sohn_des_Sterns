@@ -6,11 +6,10 @@ from nonebot.log import logger
 
 @on_startup
 def _():
-    logger.info("[插件] INFO 已启用，作者：Lparksi")
+    logger.info("[插件] INFO 已启用")
 
 
-strat_time = time.ctime()
-strat_time_unix = time.time()
+start_time = time.ctime()
 
 
 @on_command('info', only_to_me=False)
@@ -22,5 +21,5 @@ async def info(session: CommandSession):
 目前群人数：{member_cont}
 最大群人数：{max_member_count}
 ---BOT INFO---
-启动时间：{strat_time}""")
+启动时间：{start_time}""")
     logger.info(f"[插件 INFO] 向群 {group_name}/{session.event.group_id} 发送了信息")
