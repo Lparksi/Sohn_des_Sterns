@@ -1,6 +1,6 @@
 from nonebot import on_startup, on_command, CommandSession
 
-from plugins.bingImage.getImage import getDailyImage
+from plugins.bingImage.getImage import getDailyImage, getBingImage
 
 
 @on_startup
@@ -14,6 +14,7 @@ async def daliimg(session: CommandSession):
     await session.send(f'[CQ:image,file={url}]')
 
 
-@on_command('image', aliases="一图")
+@on_command('image', aliases="一图", only_to_me=False)
 async def image(session: CommandSession):
-    pass
+    url = getBingImage()
+    await session.send(f"[CQ:image,cache=0,file={url}]")

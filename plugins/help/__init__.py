@@ -19,4 +19,7 @@ help:显示本帮助
 info:显示当前群信息
 hitokoto:发送一句诗词
 weather:查询天气	
+sudo:获取超级管理员/管理员权限
+sudo_list:查询超级管理员列表
+admin_list:查询管理员列表
 更多信息：https://github.com/Lparksi/Sohn_des_Sterns/blob/master/README.md""")

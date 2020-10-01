@@ -1,4 +1,5 @@
 SUPERUSERS = {}
+ADMINS = {}
 OWNER = {}
 
 COMMAND_START = {'.', '/', '／'}

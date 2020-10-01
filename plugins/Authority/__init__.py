@@ -2,8 +2,8 @@ import time
 
 from nonebot import on_startup, on_command, CommandSession
 from nonebot.log import logger
-from nonebot.permission import GROUP_ADMIN as ADMS
 
+from config import ADMINS
 from config import SUPERUSERS as SPRS
 from tools.savelogger import logger as slogger
 
@@ -23,7 +23,7 @@ async def sudo(session: CommandSession):
         await session.send(
             f"[CQ:at,qq={session.event.user_id}]已提升为超级管理员，时效10分钟，请注意：权力越大责任越大，切勿滥用权限！(超级管理员的每一条指令都将被存储在日志文件中)")
         slogger.info(f"[授权] {session.event.user_id} 成功申请超级管理员")
-    elif session.event.user_id in ADMS:
+    elif session.event.user_id in ADMINS:
         ADMINS[session.event.user_id] = time.time()
         await session.send(
             f"[CQ:at,qq={session.event.user_id}]已提升为管理员，时效10分钟，请注意：权力越大责任越大，切勿滥用权限！(管理员的每一条指令都将被存储在日志文件中)")
