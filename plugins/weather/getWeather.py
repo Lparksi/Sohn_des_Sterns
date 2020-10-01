@@ -33,6 +33,8 @@ def getWeather(city):
     daily_date = date['daily']
     for daily in daily_date:
         msg += f"{daily['fxDate']}:\n"
+        msg += f"白天:{daily['textDay']}\n"
+        msg += f"夜晚:{daily['textNight']}\n"
         msg += f"日出时间:{daily['sunrise']}\n"
         msg += f"日落时间:{daily['sunset']}\n"
         msg += f"月升时间:{daily['moonrise']}\n"

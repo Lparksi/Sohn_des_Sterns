@@ -14,8 +14,9 @@ async def help(session: CommandSession):
 ---INFO---
 Version:0.0.1
 open source url:https://github.com/Lparksi/Sohn_des_Sterns
----Plugins---
+---Plugins/Command---
 help:显示本帮助
 info:显示当前群信息
-hitokoto:发送一句诗词	
+hitokoto:发送一句诗词
+weather:查询天气	
 更多信息：https://github.com/Lparksi/Sohn_des_Sterns/blob/master/README.md""")
