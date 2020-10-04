@@ -13,7 +13,8 @@
 |Authority | 权限管理 | -| 0.0.1 | -|
 | Restart | 重启 | False | 0.0.1 | Admin |
 | BingImage | 必应每日/随机图片 | False | 0.0.1 | All|
-  
+| TTS | 语音转文字 | False | 0.0.1 | All |
+|word_slices| 分词 | False | 0.0.1 | All | 
 ### 注解  
 - Only to me ： 在群聊中是否需要“@”机器人
 ### 插件详情
@@ -28,3 +29,5 @@
 ### 配置文件
 1. 根据注释修改根目录的 `configDefault.py` 
 2. 将文件名改为 `config.py`
+### 官方交流群  
+Tencent QQ Group: 1020682017

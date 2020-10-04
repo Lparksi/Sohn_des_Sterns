@@ -22,4 +22,6 @@ weather:查询天气
 sudo:获取超级管理员/管理员权限
 sudo_list:查询超级管理员列表
 admin_list:查询管理员列表
+tts:语音转文字
+word_slices/分词：分词
 更多信息：https://github.com/Lparksi/Sohn_des_Sterns/blob/master/README.md""")
