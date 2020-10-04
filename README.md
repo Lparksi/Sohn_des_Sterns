@@ -31,3 +31,5 @@
 2. 将文件名改为 `config.py`
 ### 官方交流群  
 Tencent QQ Group: 1020682017
+## ISSUES
+提issues请填充模板，不要修改模板！！！
