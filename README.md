@@ -1,6 +1,8 @@
 # 
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Lparksi/Sohn_des_Sterns.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Lparksi/Sohn_des_Sterns/)
 ![Lines of code](https://img.shields.io/tokei/lines/github/lparksi/Sohn_des_Sterns)
+![GitHub](https://img.shields.io/github/license/Lparksi/Sohn_des_Sterns)
+
 
 
 ## 星之子
@@ -18,6 +20,8 @@
 |Authority | 权限管理 | -| 0.0.1 | -|
 | Restart | 重启 | False | 0.0.1 | Admin |
 | BingImage | 必应每日/随机图片 | False | 0.0.1 | All|
+| TTS | 文字转语音 | False | 0.0.1 | All |
+
   
 ### 注解  
 - Only to me ： 在群聊中是否需要“@”机器人
