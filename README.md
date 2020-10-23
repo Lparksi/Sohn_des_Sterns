@@ -21,6 +21,8 @@
 | Restart | 重启 | False | 0.0.1 | Admin |
 | BingImage | 必应每日/随机图片 | False | 0.0.1 | All|
 | TTS | 文字转语音 | False | 0.0.1 | All |
+| 智能闲聊| 闲聊 | False | 0.0.1 | All |
+
 
   
 ### 注解  
@@ -28,12 +30,15 @@
 ### 插件详情
 - hitokoto  
 使用 [Hitokoto](https://hitokoto.cn/) 提供的API
+- 智能闲聊  
+使用 [腾讯AI](https://ai.qq.com/) 提供的API
 ### 插件配置文件  
 1. 根据注释修改根目录的 `pluginsConfigDefault.py`  
 2. 将文件名改为 `pluginsConfig.py`    
 
 使用配置的插件：
 - weather
+- 智能闲聊
 ### 配置文件
 1. 根据注释修改根目录的 `configDefault.py` 
 2. 将文件名改为 `config.py`

@@ -18,6 +18,7 @@ async def _(session: CommandSession):
     stripped_arg = session.current_arg_text.strip()
     if stripped_arg:
         session.state['text'] = stripped_arg
+        return
 
     if not stripped_arg:
         session.finish("请附带要转换的文本!")
