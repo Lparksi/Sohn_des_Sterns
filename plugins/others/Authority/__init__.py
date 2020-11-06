@@ -5,10 +5,8 @@ from nonebot.log import logger
 
 from config import ADMINS
 from config import SUPERUSERS as SPRS
-from tools.savelogger import logger as slogger
 
 SUPERS = {}
-ADMINS = {}
 
 
 @on_startup
@@ -22,15 +20,12 @@ async def sudo(session: CommandSession):
         SUPERS[session.event.user_id] = time.time()
         await session.send(
             f"[CQ:at,qq={session.event.user_id}]已提升为超级管理员，时效10分钟，请注意：权力越大责任越大，切勿滥用权限！(超级管理员的每一条指令都将被存储在日志文件中)")
-        slogger.info(f"[授权] {session.event.user_id} 成功申请超级管理员")
     elif session.event.user_id in ADMINS:
         ADMINS[session.event.user_id] = time.time()
         await session.send(
             f"[CQ:at,qq={session.event.user_id}]已提升为管理员，时效10分钟，请注意：权力越大责任越大，切勿滥用权限！(管理员的每一条指令都将被存储在日志文件中)")
-        slogger.info(f"[授权] {session.event.user_id} 成功申请管理员")
     else:
         await session.send("管理员指令，请勿触发")
-        slogger.info(f"[授权] {session.event.user_id} 尝试申请管理员，但并未获得权限")
 
 
 def checkSupers(user_id):

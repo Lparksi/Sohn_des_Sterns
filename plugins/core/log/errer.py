@@ -1,0 +1,2 @@
+class LogLevelError(Exception):
+    pass

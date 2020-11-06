@@ -1,6 +1,6 @@
 from nonebot import on_startup, on_command, CommandSession
 
-from plugins.bingImage.getImage import getDailyImage, getBingImage
+from plugins.others.bingImage.getImage import getDailyImage, getBingImage
 
 
 @on_startup

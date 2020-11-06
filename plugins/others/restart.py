@@ -1,7 +1,7 @@
 from nonebot import on_startup, on_command, CommandSession
 from nonebot.log import logger
 
-from plugins.Authority import checkAdmins, checkSupers
+from plugins.others.Authority import checkAdmins, checkSupers
 
 
 @on_startup

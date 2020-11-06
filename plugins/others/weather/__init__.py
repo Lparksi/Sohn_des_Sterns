@@ -1,7 +1,7 @@
 from nonebot import on_startup, on_command, CommandSession
 from nonebot.log import logger
 
-from plugins.weather.getWeather import getWeather
+from plugins.others.weather.getWeather import getWeather
 
 
 @on_startup
