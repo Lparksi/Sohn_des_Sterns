@@ -6,3 +6,6 @@ HEWEATHER_KEY = ''
 # https://ai.qq.com/ 老版本
 TENCENT_AI_APP_ID = ""
 TENCENT_AI_APP_KEY = ""
+
+# MongoDB URL
+MONGODB_URL = ''

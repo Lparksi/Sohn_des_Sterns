@@ -1,3 +1,5 @@
 nonebot~=1.8.0
 nonebot[scheduler]>= 1.8.0
 requests~=2.24.0
+pymongo[tls,srv,gssapi,snappy]~=3.11.0
+dnspython~=2.0.0

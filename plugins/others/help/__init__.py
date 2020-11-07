@@ -14,6 +14,10 @@ async def help(session: CommandSession):
 ---INFO---
 Version:0.1.0
 open source url:https://github.com/Lparksi/Sohn_des_Sterns
+---问答系统---
+teach <question> <answer>
+## <question> | <question_id> 查询详情
+<question> 调起问答
 ---实用功能---
 help:显示本帮助
 info:显示当前群信息

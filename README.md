@@ -42,3 +42,17 @@
 ### 配置文件
 1. 根据注释修改根目录的 `configDefault.py` 
 2. 将文件名改为 `config.py`
+### 问答系统
+```
+.teach <question> <answer>
+```
+添加一条教学。
+```
+<question>
+```
+调起问答。
+```
+## <question_id>
+## <question>
+```
+查询问答详情

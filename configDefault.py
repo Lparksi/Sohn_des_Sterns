@@ -4,7 +4,7 @@ SUPERUSERS = {}
 ADMINS = {}
 OWNER = {}
 
-COMMAND_START = {'.', '/', '／'}
+COMMAND_START = {'.', '/', '／', '#'}
 
 HOST = "0.0.0.0"
 PORT = 5867
