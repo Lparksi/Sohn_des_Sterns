@@ -1,6 +1,7 @@
 from nonebot import on_command, CommandSession
 from plugins.core.mongo import get_clo_teach
 import datetime
+from bson import ObjectId
 
 
 @on_command("#", aliases="inquire", only_to_me=False)
@@ -8,7 +9,7 @@ async def inquire(session: CommandSession):
     clo_teach = get_clo_teach()
     text = session.get('text')
     if len(str(text)) == 24:
-        data = clo_teach.find_one({"_id": text})
+        data = clo_teach.find_one({"_id": ObjectId(text)})
     else:
         data = clo_teach.find_one({"question": text})
     if data is None:

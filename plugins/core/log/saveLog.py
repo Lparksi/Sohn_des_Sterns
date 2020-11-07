@@ -7,7 +7,7 @@ path = sys.path[0] + r"/logs/" + f"{date.year}_{date.month}_{date.day}.log"
 
 
 def save(text: str):
-    with open(path, "a+") as f:
+    with open(path, "a+", encoding="utf-8") as f:
         localtime = time.asctime(time.localtime(time.time()))
         log = f'[{date.year}-{date.month}-{date.day} {localtime}]' + text + '\n'
         f.write(log)
