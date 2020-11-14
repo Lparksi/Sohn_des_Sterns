@@ -5,6 +5,12 @@ from plugins.core.mongo import get_clo_users
 clo_users = get_clo_users()
 
 
+# todo 优化查询逻辑，减少数据库开销
+# todo 提供更多接口，减少逻辑混乱
+# todo 将字典转为属性，提供自动补全，减少逻辑错误
+# todo func: Inquire_level 查询等级
+
+
 def new_user(session: CommandSession, name: str = None, level: int = 1, agent: bool = False) -> None:
     """
     创建一个新用户

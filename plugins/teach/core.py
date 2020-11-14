@@ -6,6 +6,12 @@ from plugins.core.log import info
 from plugins.core.mongo import get_clo_teach
 
 
+# todo 定时任务支持
+# todo 时间限定问答支持
+# todo 场景（群、前置回答）支持
+# todo 类shell语法支持
+# todo 与授权系统匹配
+
 @on_command('teach', only_to_me=False)
 async def teach(session: CommandSession):
     test = str(session.get('text')).split(" ")

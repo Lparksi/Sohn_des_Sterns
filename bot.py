@@ -21,10 +21,6 @@ if __name__ == '__main__':
         'plugins.teach'
     )
     nonebot.load_plugins(
-        path.join(path.dirname(__file__), 'plugins', 'auth'),
-        'plugins.auth'
-    )
-    nonebot.load_plugins(
         path.join(path.dirname(__file__), 'plugins', 'user'),
         'plugins.user'
     )

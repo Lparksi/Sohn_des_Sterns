@@ -6,6 +6,8 @@ from plugins.core.error_code import get_error_msg
 from nonebot.permission import SUPERUSER
 
 
+# todo 与授权系统匹配
+
 # @on_command('super', only_to_me=False, permission=SUPERUSER)
 async def admin_upgrade(session: CommandSession):
     uid = session.get('uid')
