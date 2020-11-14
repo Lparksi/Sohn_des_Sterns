@@ -1,11 +1,6 @@
+from nonebot import on_command, CommandSession
+
 import plugins.others.TencentAiNLP.api
-from nonebot import on_startup, on_command, CommandSession
-from nonebot.log import logger
-
-
-@on_startup
-def _():
-    logger.info("[插件] 智能闲聊 已启用")
 
 
 @on_command("ask", aliases="#", only_to_me=False)

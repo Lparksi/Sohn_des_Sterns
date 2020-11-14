@@ -20,4 +20,16 @@ if __name__ == '__main__':
         path.join(path.dirname(__file__), 'plugins', 'teach'),
         'plugins.teach'
     )
+    nonebot.load_plugins(
+        path.join(path.dirname(__file__), 'plugins', 'auth'),
+        'plugins.auth'
+    )
+    nonebot.load_plugins(
+        path.join(path.dirname(__file__), 'plugins', 'user'),
+        'plugins.user'
+    )
+    nonebot.load_plugins(
+        path.join(path.dirname(__file__), 'plugins', 'group_manger'),
+        'plugins.group_manger'
+    )
     nonebot.run()

@@ -1,10 +1,4 @@
-from nonebot import on_command, CommandSession, on_startup
-from nonebot.log import logger
-
-
-@on_startup
-def _():
-    logger.info("[插件] help 已启用")
+from nonebot import on_command, CommandSession
 
 
 @on_command("help", only_to_me=False)

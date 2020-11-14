@@ -1,11 +1,6 @@
-from nonebot import on_startup, on_command, CommandSession
+from nonebot import on_command, CommandSession
 
 from plugins.others.bingImage.getImage import getDailyImage, getBingImage
-
-
-@on_startup
-def _():
-    pass
 
 
 @on_command('daliimg', aliases=("每日一图", "每日图片"), only_to_me=False)

@@ -1,10 +1,4 @@
-from nonebot import on_command, on_startup, CommandSession
-from nonebot.log import logger
-
-
-@on_startup
-def _():
-    logger.info("[插件] TTS 已启用")
+from nonebot import on_command, CommandSession
 
 
 @on_command("TTS", aliases="tts", only_to_me=False)

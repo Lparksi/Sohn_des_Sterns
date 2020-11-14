@@ -1,12 +1,6 @@
-from nonebot import on_startup, on_command, CommandSession
-from nonebot.log import logger
+from nonebot import on_command, CommandSession
 
 from plugins.others.weather.getWeather import getWeather
-
-
-@on_startup
-def _():
-    logger.info("[插件] 天气 已启用")
 
 
 @on_command('weather', aliases="天气", only_to_me=False)

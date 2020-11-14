@@ -1,12 +1,4 @@
-from nonebot import on_startup, on_command, CommandSession
-from nonebot.log import logger
-
-from plugins.others.Authority import checkAdmins, checkSupers
-
-
-@on_startup
-def _():
-    logger.info("[插件] 重启 已启用")
+from nonebot import on_command, CommandSession
 
 
 @on_command("restart", only_to_me=False)

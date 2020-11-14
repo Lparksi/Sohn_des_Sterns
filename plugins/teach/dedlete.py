@@ -1,6 +1,7 @@
 from nonebot import on_command, CommandSession
 from plugins.core.mongo import get_clo_teach
 from bson import ObjectId
+from plugins.core.log import info
 
 
 @on_command('##', only_to_me=False)
@@ -8,6 +9,7 @@ async def delete(session: CommandSession):
     id = session.get('id')
     clo_teach = get_clo_teach()
     clo_teach.delete_one({"_id": ObjectId(id)})
+    info(log=f"{session.event.user_id} 已删除问题 {id}", module="teach", save=True)
     await session.send("已执行删除，")
 
 
