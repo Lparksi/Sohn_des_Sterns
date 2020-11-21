@@ -10,3 +10,6 @@ TENCENT_AI_APP_KEY = ""
 # MongoDB URL
 MONGODB_URL = ''
 SHOW_URL = False
+
+# Feedback
+Feedback = True

@@ -13,6 +13,10 @@ if __name__ == '__main__':
         'plugins.core'
     )
     nonebot.load_plugins(
+        path.join(path.dirname(__file__), 'plugins', 'feedback'),
+        'plugins.feedback'
+    )
+    nonebot.load_plugins(
         path.join(path.dirname(__file__), 'plugins', 'others'),
         'plugins.others'
     )
