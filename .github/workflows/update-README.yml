@@ -29,7 +29,7 @@ jobs:
         run: cd .admin
 
       - name: Run update_README.md
-        run: python3 update_README ${{ secrets.MasterKey }}
+        run: python3 update_README.py ${{ secrets.MasterKey }}
 
       - name: Commit Update
         run: |
