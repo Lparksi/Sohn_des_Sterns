@@ -3,14 +3,13 @@ from plugins.feedback.core.get import get_ip, get_mac_address
 from time import time
 import platform
 
-
 # todo 对于每项功能的独立计数
+
+leancloud.init(app_id="CDhsl3xYSgOtBsa7h4FRi95J-MdYXbMMI",
+               app_key="9kSvJ9zY34bH1RY7oMbgCb7B")
 
 
 def upload():
-    leancloud.init(app_id="CDhsl3xYSgOtBsa7h4FRi95J-MdYXbMMI",
-                   app_key="9kSvJ9zY34bH1RY7oMbgCb7B")
-
     EnvInfo = leancloud.Object.extend('EnvInfo')
     env_info = EnvInfo()
 

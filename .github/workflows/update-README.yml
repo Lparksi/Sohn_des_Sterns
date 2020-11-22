@@ -1,0 +1,46 @@
+name: "Update README"
+
+on:
+  push:
+    branches:
+      [ main , dev ]
+  schedule:
+    cron: '0 0 12 * * ?'
+
+jobs:
+  Update:
+    name: Update README
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Configuration Python3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+
+      - naem: Configuration Environment
+        run: pip3 install leancloud
+
+      - name: cd to .admin
+        run: cd .admin
+
+      - name: Run update_README.md
+        run: python3 update_README ${{ secrets.MasterKey }}
+
+      - name: Commit Update
+        run: |
+          git config --global user.email l.moluan@outlook.com
+          git config --global user.name Lparksi
+          cd
+          git add README.md
+          git commit -m "Update README" -a
+
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

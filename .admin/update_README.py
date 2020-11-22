@@ -1,10 +1,35 @@
+import sys
+import leancloud
 
+MasterKey = str(sys.argv[1])
+AppId = 'CDhsl3xYSgOtBsa7h4FRi95J-MdYXbMMI'
+times = 100
+
+
+def get_version():
+    with open('../.version', encoding="utf-8") as f:
+        SdS_Version = f.read()
+        return SdS_Version
+
+
+def get_times():
+    leancloud.init(app_id=AppId,
+                   master_key=MasterKey)
+    EnvInfo = leancloud.Object.extend('EnvInfo')
+
+    query = EnvInfo.query
+    return query.count()
+
+
+def write_readme(version, started_times):
+    with open('../README.md', "w", encoding="utf-8") as f:
+        f.write(f"""
 # 
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Lparksi/Sohn_des_Sterns.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Lparksi/Sohn_des_Sterns/)
 ![Lines of code](https://img.shields.io/tokei/lines/github/lparksi/Sohn_des_Sterns)
 ![GitHub](https://img.shields.io/github/license/Lparksi/Sohn_des_Sterns)
 
-> 直到v0.2.1,星之子已被启动11次!
+> 直到v{version},星之子已被启动{started_times}次!
 
 ## 星之子
 > "无限星河之子" 
@@ -65,4 +90,9 @@ TODO.
 ```
 ### <question_id>
 ```
-删除问答
+删除问答""")
+
+
+if __name__ == '__main__':
+    write_readme(version=get_version(),
+                 started_times=get_times())
