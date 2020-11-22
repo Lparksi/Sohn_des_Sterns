@@ -28,8 +28,8 @@ jobs:
 
       - name: Run update_README.md
         run: |
-        cd .admin
-        python3 update_README.py ${{ secrets.MasterKey }}
+          cd .admin
+          python3 update_README.py ${{ secrets.MasterKey }}
 
       - name: Commit Update
         run: |
