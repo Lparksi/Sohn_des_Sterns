@@ -5,7 +5,7 @@ on:
     branches:
       [ main , dev ]
   schedule:
-    - cron: [ "0 0 12 * * ?" ]
+    - cron: '12 */6 * * *'
 
 jobs:
   Update:
