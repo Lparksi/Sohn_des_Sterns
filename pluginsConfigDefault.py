@@ -1,3 +1,10 @@
+SdS_Version = '0.2.1'
+pre_release = True
+
+# GROUPS
+GROUPS = [
+
+]
 # 和风天气
 # heweather.com
 HEWEATHER_KEY = ''
