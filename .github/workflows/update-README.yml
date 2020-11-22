@@ -25,11 +25,11 @@ jobs:
       - name: Configuration Environment
         run: pip3 install leancloud
 
-      - name: cd to .admin
-        run: cd .admin
 
       - name: Run update_README.md
-        run: python3 update_README.py ${{ secrets.MasterKey }}
+        run: |
+        cd .admin
+        python3 update_README.py ${{ secrets.MasterKey }}
 
       - name: Commit Update
         run: |
