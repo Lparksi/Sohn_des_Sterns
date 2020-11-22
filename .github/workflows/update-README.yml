@@ -33,11 +33,11 @@ jobs:
 
       - name: Commit Update
         run: |
+          cd
           git config --global user.email l.moluan@outlook.com
           git config --global user.name Lparksi
-          cd
           git init
-          git add README.md
+          git add README
           git commit -m "Update README" -a
 
       - name: Push Changes
