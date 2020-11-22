@@ -31,17 +31,12 @@ jobs:
           cd .admin
           python3 update_README.py ${{ secrets.MasterKey }}
 
-      - name: Commit Update
-        run: |
-          cd
-          git config --global user.email l.moluan@outlook.com
-          git config --global user.name Lparksi
-          git init
-          git add README.md
-          git commit -m "Update README" -a
-
-      - name: Push Changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+      - name: Commit changes
+          uses: EndBug/add-and-commit@v5
+          with:
+            author_name: Lparksi
+            author_email: l.moluan@outlook.com
+            message: "Upload README.md"
+            add: "*.md"
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
