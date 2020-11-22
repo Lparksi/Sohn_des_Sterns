@@ -32,11 +32,11 @@ jobs:
           python3 update_README.py ${{ secrets.MasterKey }}
 
       - name: Commit changes
-          uses: EndBug/add-and-commit@v5
+          uses: EndBug/add-and-commit@v5.2.0
           with:
             author_name: Lparksi
             author_email: l.moluan@outlook.com
-            message: "Upload README.md"
+            message: "Upload README"
             add: "*.md"
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
