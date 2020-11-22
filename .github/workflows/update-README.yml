@@ -22,7 +22,7 @@ jobs:
           python-version: '3.9'
           architecture: 'x64'
 
-      - naem: Configuration Environment
+      - name: Configuration Environment
         run: pip3 install leancloud
 
       - name: cd to .admin
