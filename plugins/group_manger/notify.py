@@ -1,5 +1,5 @@
 from nonebot import on_notice, NoticeSession
-from pluginsConfig import GROUPS
+from plugins.plugins_config.core import GROUPS
 
 
 @on_notice('notify')

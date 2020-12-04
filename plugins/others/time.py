@@ -3,7 +3,7 @@ from datetime import datetime
 import nonebot
 import pytz
 from aiocqhttp.exceptions import Error as CQHttpError
-from pluginsConfig import GROUPS
+from plugins.plugins_config.core import GROUPS
 
 
 @nonebot.scheduler.scheduled_job('cron', hour='*')
