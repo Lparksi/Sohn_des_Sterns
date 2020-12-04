@@ -1,6 +1,6 @@
 from nonebot import on_startup
 from nonebot.log import logger
-from pluginsConfig import SdS_Version, pre_release
+from plugins.plugins_config.core import SdS_Version, pre_release
 
 
 @on_startup

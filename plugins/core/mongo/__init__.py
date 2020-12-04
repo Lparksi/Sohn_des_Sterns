@@ -1,7 +1,7 @@
 # MongoDB 数据库操作
 
 from pymongo import MongoClient
-from pluginsConfig import MONGODB_URL, MONGODB_SHOW_URL
+from plugins.plugins_config.core import MONGODB_URL, MONGODB_SHOW_URL
 from nonebot.log import logger
 
 MongoDB = False

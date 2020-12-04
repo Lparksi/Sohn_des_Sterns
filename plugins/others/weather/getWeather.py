@@ -1,6 +1,6 @@
 # Check & Import Config
 try:
-    from pluginsConfig import HEWEATHER_KEY
+    from plugins.plugins_config.core import HEWEATHER_KEY
 
     noConfig = False
 except ImportError:
