@@ -34,21 +34,7 @@ def write_readme(version, started_times):
 ## 星之子
 > "无限星河之子" 
 ### 隐私政策
-自 v0.2.1 之后我们默认起用了反馈机制。
-
-反馈信息中包括了IP等敏感信息，所以我们并不会开放查询权限。
-
-如果你实在不放心，你可以在配置文件里关闭反馈。
-```python
-# pluginsConfig.py
-
-# Line 21: Feedback
-Feedback = True
-
-# make it closed
-Feedback = False
-```
-你可以在 `plugins/feedback/core/main.py` 查询我们具体收集了什么信息。
+启动统计方式将适时重构，现在我们不会收集你的任何信息。
 ### 快速部署
 
 参考[Nonebot](https://docs.nonebot.dev/guide/installation.html)
