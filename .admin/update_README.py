@@ -29,12 +29,16 @@ def write_readme(version, started_times):
 ![Lines of code](https://img.shields.io/tokei/lines/github/lparksi/Sohn_des_Sterns)
 ![GitHub](https://img.shields.io/github/license/Lparksi/Sohn_des_Sterns)
 
-> 直到v{version},星之子已被启动{started_times}次!
+> 直到v{version},星之子已被启动{started_times}次!  
 
 ## 星之子
 > "无限星河之子" 
 ### 隐私政策
-启动统计方式将适时重构，现在我们不会收集你的任何信息。
+我们将收集你的静态信息(Mac码、我们生成的唯一身份码、已加密的活跃群聊号)  
+*对于加密的理解*  
+我们采用md5单向加密，也就是说我们只能吃真实数值算出md5值，不能通过md5值反推出原文。  
+我们收集群聊的md5主要是想在不侵犯用户隐私的情况下，收集基本信息，为星之子开发助力。  
+
 ### 快速部署
 
 参考[Nonebot](https://docs.nonebot.dev/guide/installation.html)

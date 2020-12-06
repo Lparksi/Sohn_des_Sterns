@@ -4,6 +4,7 @@ from nonebot import on_command, CommandSession
 from nonebot.log import logger
 from plugins.core.log import info
 from plugins.core.mongo import get_clo_teach, MongoDB
+from plugins.feedback.feedback import feedback
 
 
 # todo 定时任务支持
@@ -42,6 +43,7 @@ if MongoDB:
         info(log=f"插入一个文档：{que}", save=True, module="MongoDB")
         clo_teach = get_clo_teach()
         id = clo_teach.insert_one(que).inserted_id
+        feedback.teach_add(session=session)
         await session.finish(f"问答创建成功！ID为{id}")
 
 

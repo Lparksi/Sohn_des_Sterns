@@ -3,7 +3,7 @@ from os.path import exists
 import nonebot
 import shutil
 import config
-import json
+import uuid
 
 
 def copy_plugins_config():
@@ -12,6 +12,12 @@ def copy_plugins_config():
 
 
 if __name__ == '__main__':
+    if not exists('sds_id'):
+        sds_id = str(uuid.uuid1())
+        with open('sds_id', 'w+', encoding='utf-8') as f:
+            f.write(sds_id)
+        nonebot.log.logger.info(f"未检测出星之子唯一Id，已创建，Id为{sds_id}")
+
     if not exists('pluginsConfig.json'):
         copy_plugins_config()
 
