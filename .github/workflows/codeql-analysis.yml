@@ -35,4 +35,4 @@ jobs:
         uses: github/codeql-action/analyze@v1
 
       - name: Upload
-        run: bash <(curl -s https://codecov.io/bash)
+        run: bash <(curl -s https://codecov.io/bash) -s /home/runner/work/Sohn_des_Sterns/results/python-builtin.sarif
