@@ -1,9 +1,20 @@
+# Ides
 /.idea/
-/venv/
-/logs/
-pluginsConfig.py
-config.py
-/pluginsConfig.json
-/sds_id
 /pythonenv3.8/
 __pycache__
+
+# Env
+/venv
+
+# Logs
+/logs
+
+# config
+pluginsConfig.json
+config.py
+
+# private
+sds_id
+
+# Not ready to publish
+/plugins/user

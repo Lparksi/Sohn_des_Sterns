@@ -53,4 +53,5 @@ if __name__ == '__main__':
         path.join(path.dirname(__file__), 'plugins', 'group_manger'),
         'plugins.group_manger'
     )
+    nonebot.log.logger.info("星之子插件加载完毕。https://sds.parksi.top")
     nonebot.run()
