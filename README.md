@@ -4,7 +4,7 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/lparksi/Sohn_des_Sterns)
 ![GitHub](https://img.shields.io/github/license/Lparksi/Sohn_des_Sterns)
 
-> 直到v0.2.1,星之子已被启动6次!  
+> 直到v0.2.1,星之子已被启动17次!  
 
 ## 星之子
 > "无限星河之子" 
@@ -56,3 +56,8 @@ TODO.
 ### <question_id>
 ```
 删除问答
+
+### 鸣谢
+> Jetbrains 为开源开发者提供免费的实用IDE.
+> 我们使用 Pycharm 开发并维护星之子
+![https://www.jetbrains.com/?from=Sohn_des_Sterns](https://s3.ax1x.com/2020/12/24/r2HJeI.png)
