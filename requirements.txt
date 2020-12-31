@@ -1,6 +1,0 @@
-nonebot[scheduler]>= 1.8.1
-requests~=2.25.1
-pymongo>=3.11.2
-dnspython~=2.0.0
-pytz>=2020.4
-leancloud
