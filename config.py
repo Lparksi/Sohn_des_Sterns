@@ -11,9 +11,6 @@ SUPERUSERS = {2726043636}
 # DB
 USE_SQLITE3 = True
 
-# Mail
-USE_SMTP_MAIL = False
-MAIL_SMTP_HOST = ''
-MAIL_SMTP_PORT = 25
-MAIL_SMTP_USER = ''
-MAIL_SMTP_PASS = ''
+# Plugins Config
+# function.time
+FUNC_TIME_GROUPS = [866912510]
